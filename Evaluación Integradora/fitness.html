@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Siempre Salud</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script type="text/javascript" src="js/funcion_reloj.js"></script>
+    <link rel="stylesheet" href="css/reproductor.css">
+    <script src="js/reproductor.js"></script>
+    <script type="text/javascript">
+        function alerta(){
+            alert ("Sección en construcción... Intente nuevamente más tarde!!!");
+        }
+    </script>
+    <script type="text/javascript">
+        function iniciar() {
+            var elem=document.getElementById("texto_pie");
+            var contenido=elem.innerHTML;
+            var ancho=screen.width;
+            var alto=screen.height;
+            elem.innerHTML=contenido + "<small>| La resolución de la palntalla es de " + ancho + " x " + alto + "</small>";
+        }
+            addEventListener('load', iniciar);
+    </script>
+
+</head>
+<body onload="extract();">
+    <section id="contenedor">
+        <header id="cabecera_index">
+            <div id="logo" onclick="location.href = 'index.html'"></div>
+            <div id="marca">
+                <h1>Siempre Salud</h1>
+                <h4>Lic. Maria Florencia Cordero</h4>            
+            </div>
+             <div id="reloj">
+            <form name="form_reloj"> 
+                <input type="text" name="reloj" size="10" id="formato" onfocus="foco();"> 
+            </form>
+            </div>
+            <div id="redes">
+                <a href="http://www.facebook.com" target="new"><img src="imagenes/boton-facebook.png" alt="Logo Facebook" title="Facebook"/></a>
+                <a href="http://www.twitter.com" target="new"><img src="imagenes/boton_twitter.png" alt="Logo Twitter" title="Twiter"/></a>
+            </div>
+        </header>
+        <nav id="botonera_principal">
+            <ul>
+                <li><a class="boton_rojo" href="index.html">Inicio</a></li>
+                <li><a class="boton_naranja" href="nutricion.html">Nutrición</a></li>
+                <li><a class="boton_amarillo" href="planes.html">Tratamientos</a></li>
+                <li><a class="boton_verde" href="recetas.html">Recetas</a></li>
+                <li><a class="boton_violeta" href="fitness.html">Fitness</a></li>
+                <li><a class="boton_azul" href="tareas.html">Tareas</a></li>
+                <li><a class="boton_celeste" href="turnos.html">Turnos</a></li>
+            </ul>
+             </nav>
+        <section id="contenido_index">
+            <div id="contenido_fitness">                    
+                    <div id="reproductor">
+                        <video id="medio" width="720" height="400">
+                        <source src="videos/video1.mp4">
+                        <source src="videos/video1.ogg">
+                        </video>
+                        <nav>
+                        <div id="botones">
+                            <button type="button" id="reproducir">Reproducir</button>
+                        </div>
+                        <div id="barra">
+                        <div id="progreso"></div>
+                        </div>
+                        <div style="clear: both"></div>
+                        </nav>
+                    </div>
+            </div>
+            
+            <div id="contenido_abajo">
+                <div id="base1">
+                    <p>Viamonte xxxx - 3°Piso - Dpto. b</p>
+                    <p>Balvanera - C.A.B.A.</p>
+                    <p>Días y horarios de Atención:</p>
+                    <p>Lunes a Viernes de 14:00 a 20:00hs.</p>
+                </div>
+                <div id="base2">
+                    <p>Próximamente atención a las siguientes Empresas de Medicina Prepagas</p>
+                </div>
+                <div id="imagen_base"></div>
+            </div>        
+        </section>
+        <footer id="pie_index">
+                <small id="texto_pie">Copyright © 2016 | Todos los derechos reservados | <a class="subrayado_enlace" href="#">Términos y Condiciones</a> | Atención telefónica 0800-777-7823</small>
+        </footer>
+    </section>
+</body>
+</html>

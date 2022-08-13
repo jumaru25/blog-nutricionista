@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Siempre Salud</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script type="text/javascript" src="js/funcion_reloj.js"></script>
+    <script type="text/javascript">
+        function alerta(){
+            alert ("Sección en construcción... Intente nuevamente más tarde!!!");
+        }
+    </script>
+    <script type="text/javascript">
+        function iniciar() {
+            var elem=document.getElementById("texto_pie");
+            var contenido=elem.innerHTML;
+            var ancho=screen.width;
+            var alto=screen.height;
+            elem.innerHTML=contenido + "<small>| La resolución de la palntalla es de " + ancho + " x " + alto + "</small>";
+        }
+            addEventListener('load', iniciar);
+        
+    </script>
+</head>
+<body onload="extract();">
+    <section id="contenedor">
+        <header id="cabecera_index">
+            <div id="logo" onclick="location.href = 'index.html'"></div>
+            <div id="marca">
+                <h1>Siempre Salud</h1>
+                <h4>Lic. Maria Florencia Cordero</h4>            
+            </div>
+             <div id="reloj">
+            <form name="form_reloj"> 
+                <input type="text" name="reloj" size="10" id="formato" onfocus="foco();"> 
+            </form>
+            </div>
+            <div id="redes">
+                <a href="http://www.facebook.com" target="new"><img src="imagenes/boton-facebook.png" alt="Logo Facebook" title="Facebook"/></a>
+                <a href="http://www.twitter.com" target="new"><img src="imagenes/boton_twitter.png" alt="Logo Twitter" title="Twiter"/></a>
+            </div>
+        </header>
+        <nav id="botonera_principal">
+            <ul>
+                <li><a class="boton_rojo" href="index.html">Inicio</a></li>
+                <li><a class="boton_naranja" href="nutricion.html">Nutrición</a></li>
+                <li><a class="boton_amarillo" href="planes.html">Tratamientos</a></li>
+                <li><a class="boton_verde" href="recetas.html">Recetas</a></li>
+                <li><a class="boton_violeta" href="fitness.html">Fitness</a></li>
+                <li><a class="boton_azul" href="tareas.html">Tareas</a></li>
+                <li><a class="boton_celeste" href="turnos.html">Turnos</a></li>
+            </ul>
+             </nav>
+        <section id="contenido_index">
+            <div id="contenido_recetas">
+                <div id="tratamientos_izqrecetas">
+                    <ul id="tratamientos">
+                        <li>
+                            <a href="#" onclick="alerta();">Torre de hortalizas</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="alerta();">Milanesitas de calabaza</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="alerta();">Pañuelitos coloridos</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="alerta();">Budín gratinado</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="alerta();">Pizzetas light</a>
+                        </li>
+                        <li>
+                            <a href="#"onclick="alerta();" onclick="alerta();">Ñoquis increíbles</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="alerta();">Tortilla de arvejas</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="alerta();">Cazuela Mediterránea</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="alerta();">Sopa crema de legumbres</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tratamientos_derecetas">
+                    <ul id="tratamientos">
+                        <li>
+                            <a href="#" onclick="alerta();">Bastoncitos Maravilla</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="alerta();">Supremas con salsa de naranja</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="alerta();">Combo de pollo</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="alerta();">Moldecitos divertidos</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="alerta();">Guisito con carne y choclo</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="alerta();">Potaje multicolor</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="alerta();">Peceto a la vinagreta</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="alerta();">Riñoncitos con arroz</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="alerta();">Empanaditas marineras</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div id="contenido_abajo">
+                <div id="base1">
+                    <p>Viamonte xxxx - 3°Piso - Dpto. b</p>
+                    <p>Balvanera - C.A.B.A.</p>
+                    <p>Días y horarios de Atención:</p>
+                    <p>Lunes a Viernes de 14:00 a 20:00hs.</p>
+                </div>
+                <div id="base2">
+                    <p>Próximamente atención a las siguientes Empresas de Medicina Prepagas</p>
+                </div>
+                <div id="imagen_base"></div>
+            </div>        
+        </section>
+        <footer id="pie_index">
+                <small id="texto_pie">Copyright © 2016 | Todos los derechos reservados | <a class="subrayado_enlace" href="#">Términos y Condiciones</a> | Atención telefónica 0800-777-7823</small>
+        </footer>
+    </section>
+</body>
+</html>

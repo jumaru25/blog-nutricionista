@@ -1,0 +1,1046 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header, nav, section, article, aside, footer, figure, figcaption, hgroup {
+    display: block;
+}
+body {
+    background-color: #40FF00;
+    font-family: arial,tahoma;
+    background:-webkit-linear-gradient(left, #04B404,#40FF00);
+    background:-ms-linear-gradient(left, #04B404,#40FF00);
+    background:-moz-linear-gradient(left, #04B404,#40FF00);
+    text-align: center;
+}
+
+#contenedor {
+    width: 960px;
+    height: 750px;
+    margin: 15px auto;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    -ms-box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+#cabecera_index {
+    width: 960px;
+    height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 0 0;
+}
+
+#logo {
+    width: 80px;
+    height: 65px;
+    background-image: url(imagenes/logo2.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    float: left;
+    border-radius: 10px 0 0 0;
+}
+#marca {
+    width: 300px;
+    height: 60px;
+    float:left;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@font-face{
+    font-family: 'letratitulo';
+    src: url('Gabrielle.ttf');
+}
+
+
+#marca h1 {
+    margin: 0;
+    font-family: letratitulo;
+    font-style: italic;
+    color: #01DF01;
+    font-size: 50px;
+}
+
+#marca h4 {
+    margin: 0;
+    font-family: sans-serif;
+    color: #0B610B;
+    text-align: left;
+}
+
+
+#redes {
+    width: 80px;
+    height: 40px;
+    float: right;
+    /*margin-bottom: 60px;*/
+}
+
+#redes img {
+    width: 34px;
+    height: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+#canvas {
+    width: 960px;
+    height: 25px;
+    float: left;
+    margin-top: 10px;
+}
+#formato {
+    width: 200px;
+    height: 50px;
+    background-color: #01DF01;
+    border-radius: 50px 50px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    }
+#reloj{
+    width: 200px;
+    height: 50px;
+    background-color: #BDBDBD;
+    border-radius: 50px 50px;
+    color: #0000FF;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 200;
+    float:left;
+    margin-top: 3px;
+}
+#botonera_principal {
+    width: 959px;
+    height: 50px;
+    clear: right;
+    padding-left: 1px;
+    background: #ffffff;
+}
+/*
+#botonera_principal ul {
+    list-style-type: none;
+}*/
+#botonera_principal ul li {
+    display: inline;
+    list-style: none;
+}
+#botonera_principal ul li a{
+    width: 133px;
+    height: 50px;
+    display: inline-block;
+    text-align:center;
+    line-height: 50px;
+    font-weight:bold;
+    text-decoration: none;
+    color:#ffffff;
+    border-radius: 6px 6px 0 0;
+}
+
+#botonera_principal ul li a:hover {background-color: #A4A4A4;}
+    
+.boton_rojo {
+    background-color: #FF0000;
+}
+.boton_naranja {
+    background-color: #FF8000;
+}
+.boton_amarillo {
+    background-color: #FCDF03;/*#FFFF00*/
+}
+.boton_verde {
+    background-color: #40FF00;
+}
+.boton_violeta {
+    background-color: #DE38FB;
+}
+.boton_azul {
+    background-color: #0000FF;
+}
+.boton_celeste {
+    background-color: #00FFFF;
+}
+
+#contenido_index {
+    width: 960px;
+    height: 560px;
+}
+
+#contenido_arriba {
+    width: 960px;
+    height: 400px;
+    background-image: url(imagenes/slider3.jpg);
+    background-size: cover;
+}
+
+
+
+/*SLIDER*/
+
+.slide{
+    /*border: .5em solid #ed9ce3;*/
+    width: 960px;
+    height: 400px;
+    /*margin: 2% auto;
+    border-radius: .5em;
+    box-shadow: 10px 10px 5px #888;*/
+    position: relative;
+}
+ 
+.slide img{
+    width: 960px;
+    height: 400px;
+    position: absolute;
+}
+ 
+.slide .img2, .slide .img3 {
+    display: none;
+}
+
+figure{
+    margin: 0;
+}
+
+/*FIN SLIDER*/
+
+#contenido_abajo {
+    width: 960px;
+    height: 160px;
+}
+
+#base1, #base2, #imagen_base {
+    float: left;
+    color: #0B610B;
+    background-color: #FFFFFF;
+}
+#base1 {
+    width: 320px;
+    height: 160px;
+}
+#base1 p {
+    font-weight: bold;
+    text-align:center;
+    margin-top: 15px;
+}
+#base2 {
+    width: 290px;
+    height: 120px;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bold;
+}
+#imagen_base {
+    background-image: url(imagenes/prepagas.png);
+    background-size: cover;
+    width: 350px;
+    height: 160px;
+}
+
+#pie_index {
+    width: 960px;
+    height: 40px;
+    background-color: #FE9A2E;
+    border-radius: 0 0 10px 10px;
+    line-height: 40px;
+    clear: both;
+}
+small {
+    margin-left: 5px;
+    color: #3B170B;
+}
+.subrayado_enlace {
+    text-decoration: none;
+    color: #3B170B;
+}
+
+
+/*_______________Solapa Nutrición_______________*/
+
+#contenido_nutricion {
+    width: 960px;
+    height: 400px;
+    background-color: #FF8000;
+    padding: 5px 7px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#contenido_nutricion figure {
+    float: left;
+}
+
+#contenido_nutricion figure img {
+    margin: 3px 5px;
+    width: 125px;
+    height: 95px;
+    border-radius: 5px;
+}
+
+#contenido_nutricion figure figcaption {
+    font-size: 11px;
+    margin: 0px 5px;
+    width: 125px;
+    height: auto;
+    text-align:center;
+}
+#contenido_nutricion figure figcaption span {
+    font-weight: bold;
+}
+
+#contenido_nutricion figure figcaption:hover {background-color: #A4A4A4;}
+
+#articulo {
+    padding: 10px 20px;
+    background-color: #FF8000;
+    text-align: justify;
+    width: 750px;
+    float: left;
+}
+
+#articulo li {
+    margin-left: 15px;
+}
+#tabla {
+    width: 164px;
+    float: left;
+    background: #ffffff;
+    border: 3px solid #FF8000;
+}
+
+.textoblanco {
+    color: #ffffff;
+}
+
+article span {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+article h4 {
+    font-style: italic;
+}
+.textocentrado {
+    text-align: center;
+}
+article td {
+    padding: 1px;
+    border-bottom-color: black;
+}
+
+article td:nth-child(even) {
+    text-align: right;
+}
+
+article tr:nth-child(even) {
+    background-color: #FF8000;
+}
+
+#volver {
+    width: 170px;
+    float: left;
+    background-color: #ff8000;
+    text-align:center;
+    padding-top: 18px;
+}
+
+#volver a {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+
+/*_______________Solapa Tratamientos_______________*/
+
+#contenido_tratamientos {
+    width: 960px;
+    height: 400px;
+    background-color: #FCDF03;/*#FFFF00*/
+}
+
+#tratamientos_izq {
+    float: left;
+    width: 470px;
+    height: 400px;
+}
+#tratamientos {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#tratamientos li {
+    width: 455px;
+    height: 38px;
+    display: inline-block;
+    text-align:left;
+    line-height: 38px;
+    font-weight:bold;
+    text-decoration: none;
+    color:#0B3B17;
+    border-bottom: 2px;
+    border-bottom-color: #0B3B17;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-bottom-style:solid;
+}
+
+#tratamientos_der {
+    width: 470px;
+    height: 400px;
+    float: right;
+}
+
+.textotratamiento {
+    font-size: 15px;
+    background-color: #F2F2F2;
+    line-height: 15px;
+    margin-top: auto;
+    text-align: justify;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.4);
+    padding: 3px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/*_______________Solapa Recetas_______________*/
+
+#contenido_recetas {
+    width: 960px;
+    height: 400px;
+    background-color: #40FF00;
+}
+
+
+#tratamientos li a {
+    text-decoration: none;
+    color: #0B3B17;
+}
+
+#tratamientos_izqrecetas {
+    float: left;
+    width: 470px;
+    height: 400px;
+}
+
+#tratamientos_derecetas {
+    width: 470px;
+    height: 400px;
+    float: right;
+}
+
+/*_______________Solapa Formulario_______________*/
+
+#contenido_turnos {
+    width: 960px;
+    background-color: #00FFFF;
+    float: left;
+}
+
+
+#formato_formularios{
+    width: 450px;
+    height: auto;
+    background-color: rgba(255,255,255,0.7);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 230px;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.botones{
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.input_text{
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.formato_textarea{
+    height: 90px;
+    border-radius: 5px;
+}
+
+.formatofecha {
+    height: 30px;
+    border-radius: 5px;
+    width: 238px;
+    margin-bottom: 10px;
+}
+
+/*_______________Solapa Fitness_______________*/
+
+#contenido_fitness {
+    width: 920px;
+    background-color: #DE38FB;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*_______________Solapa Tareas_______________*/
+
+#contenido_tareas {
+    width: 920px;
+    background-color: #0000FF;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+
+/*_______________media 600 a 1024px_______________*/
+
+@media handheld, screen and (min-width:600px) and (max-width:1023px){
+
+#contenedor {
+    width: 590px;
+    height: auto;
+    background-color: #FFFF00;
+}
+
+#cabecera_index {
+    width: 590px;
+}
+
+#botonera_principal {
+    width: 588px;
+    padding-left: 2px;
+}
+
+#botonera_principal ul li a{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    color:#0B610B;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#contenido_index {
+    width: 590px;
+    height: auto;
+}
+
+#contenido_arriba {
+    width: 590px;
+    height: 300px;
+    background-image: url(imagenes/slider2.jpg);
+}
+
+#contenido_abajo {
+    width: 590px;
+    height: auto;
+}
+
+#base1, #base2, #imagen_base {
+    color: #0B610B;
+}
+#base1 {
+    width: 590px;
+    height: 100px;
+}
+#base1 p {
+    margin-top: 5px;
+}
+#base2 {
+    width: 240px;
+    height: 120px;
+    padding-top: none;
+}
+#imagen_base {
+    width: 350px;
+    height: 160px;
+}
+
+#pie_index {
+    width: 590px;
+    text-align: center;
+}
+small {
+    margin-left:none;
+    font-size:11px;
+}
+
+    
+/*_______________Solapa Nutrición_______________*/
+
+#contenido_nutricion {
+    width: 590px;
+    height: 780px;
+    padding-left: 25px;
+}
+
+#palta {
+    width: 590px;
+    height: 850px;
+    background-color: #FF8000;
+    }
+    
+#articulo {
+    padding: 10px 20px;
+    width: 550px;
+    float: none;
+}
+
+#articulo p {
+    font-size: 12px;
+}
+    
+#articulo li {
+    font-size: 12px;
+}
+    
+#tabla {
+    width: 164px;
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article span {
+    font-size: 15px;
+}
+
+article h4 {
+    font-size: 13px;
+}
+    
+article h5 {
+    font-size: 11px;
+}    
+    
+#volver {
+    width: 170px;
+    float: none;
+    text-align:center;
+    padding-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#volver a {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+/*_______________Solapa Tratamientos_______________*/
+
+#contenido_tratamientos {
+    width: 590px;
+    height: auto;
+}
+
+#tratamientos_izq {
+    width: 295px;
+    height: auto;
+    background-color: #FFFF00;
+}
+
+#tratamientos li {
+    width: 275px;
+    height: 31px;
+    line-height: 31px;
+    border-bottom: 1px;
+    border-bottom-style:solid;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 2.5px;
+}
+
+#tratamientos_der {
+    width: 295px;
+    height: auto;
+    background-color: #FFFF00;
+}
+
+    .textotratamiento {
+    font-size: 12px;
+}
+
+
+
+
+
+
+/*_______________Solapa Recetas_______________*/
+
+#contenido_recetas {
+    width: 590px;
+    height: auto;
+}
+
+#tratamientos_izqrecetas {
+    width: 295px;
+    height: auto;
+    background-color: #40FF00;
+}    
+    
+#tratamientos_derecetas {
+    width: 295px;
+    height: auto;
+    background-color: #40FF00;
+}
+
+/*_______________Solapa Formulario_______________*/
+
+#contenido_turnos {
+    width: 590px;
+}
+
+
+#formato_formularios{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+}
+
+/*_______________Cierre media 600 a 1024_______________*/
+
+
+
+
+
+/*_______________media 600px_______________*/
+
+@media handheld, screen and (max-width:599px){
+
+#contenedor {
+    width: 90%;
+    height: auto;
+    margin: 1em auto;
+    text-align: left;
+    background-color: #FF8000;
+}
+
+#cabecera_index {
+    width: 100%;
+    height: auto;
+}
+
+#logo {
+    width: 100px;
+    height: 75px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+#marca {
+    width: 70%;
+    height: auto;
+    float:none;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#marca h1 {
+    font-size: 3.5em;
+}
+
+#marca h4 {
+    text-align: center;
+}
+
+
+#redes {
+    width: 80px;
+    height: 40px;
+    float: none;
+    margin-bottom: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+#botonera_principal {
+    width: 100%;
+    height: auto;
+    padding: 0.2em 0em;
+    clear: none;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+#botonera_principal ul li {
+    display: block;
+}
+    
+#botonera_principal ul li a{
+    width: 70%;
+    height: auto;
+    line-height: auto;
+    border-radius: 0.5em;
+    margin-top: 0.1em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+#contenido_index {
+    width: 100%;
+    height: auto;
+}
+
+#contenido_arriba {
+    width: 100%;
+    height: 200px;
+    background-image: url(imagenes/slider1.jpg);
+    background-size: cover;
+}
+
+#contenido_abajo {
+    width: 100%;
+    height: auto;
+    clear: both;
+}
+
+#base1, #base2, #imagen_base {
+    float: none;
+}
+#base1 {
+    width: 100%;
+    height: auto;
+}
+#base1 p {
+    margin-top: 0em;
+    font-size: 0.8em;
+    padding-top: 0.3em;
+}
+#base2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 0.8em;
+    color: #FF0000;
+}
+    
+#imagen_base {
+    background-size: contain;
+    width: 100%;
+    height: 75px;
+}
+
+#pie_index {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+small {
+    margin-left: 0em;
+    font-size: 0.6em;
+}
+
+/*_______________Solapa Nutrición_______________*/
+
+#contenido_nutricion {
+    width: 100%;
+    height: auto;
+    padding: 0.5em 3.5em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #FF8000;
+    text-align: center;
+}
+
+#contenido_nutricion figure {
+    float: left;
+}
+
+#contenido_nutricion figure img {
+    margin: 3px 5px;
+    width: 125px;
+    height: 95px;
+    border-radius: 5px;
+}
+
+#contenido_nutricion figure figcaption {
+    font-size: 11px;
+    margin: 0px 5px;
+    width: 125px;
+    height: auto;
+    text-align:center;
+}
+
+/*solapa Palta*/    
+    
+#palta {
+    width: 100%;
+    height: auto;
+}
+    
+    #articulo {
+    padding: 0.5em 0.8em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: justify;
+    width: 100%;
+    float: none;
+}
+
+#articulo li {
+    margin-left: 1em;
+}
+#tabla {
+    display: none;
+}
+
+article span {
+    font-size: 1em;
+}
+
+#volver {
+    width: 100%;
+    float: none;
+    text-align:center;
+    padding-top: 1em;
+}
+
+#volver a {
+    color: #ffffff;
+    font-size: 2em;
+}    
+    
+
+/*_______________Solapa Tratamientos_______________*/
+
+#contenido_tratamientos {
+    width: 100%;
+    height: auto;
+}
+
+#tratamientos_izq {
+    float: none;
+    width: 100%;
+    height: auto;
+    background-color: #FFFF00;
+    text-align: center;
+}
+
+#tratamientos li {
+    width: 90%;
+    height: auto;
+    display: inline-block;
+    line-height: auto;
+    border-bottom: 0.1em;
+    padding-left: 0%;
+    padding-right: 0%;
+    border-bottom-style:solid;
+    font-size: 0.9em;
+}
+
+#tratamientos_der {
+    width: 100%;
+    height: auto;
+    float: none;
+    background-color: #FFFF00;
+    text-align: center;
+}
+
+.textotratamiento {
+    font-size: 0.9em;
+    line-height: 1em;
+    border-radius: 0.5em;
+    padding: 0.3em;
+}
+
+
+
+
+
+/*_______________Solapa Recetas_______________*/
+
+#contenido_recetas {
+    width: 100%;
+    height: auto;
+}
+
+#tratamientos_izqrecetas {
+    float: none;
+    width: 100%;
+    height: auto;
+    background-color: #40FF00;
+    text-align: center;
+}    
+    
+#tratamientos_derecetas {
+    width: 100%;
+    height: auto;
+    float: none;
+    background-color: #40FF00;
+    text-align: center;
+}
+    
+    
+/*_______________Solapa Formulario_______________*/
+
+#contenido_turnos {
+    width: 100%;
+    float: left;
+}
+
+
+#formato_formularios{
+    width: 70%;
+    height: auto;
+    background-color: rgba(255,255,255,0.7);
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.8em;
+}
+
+.botones{
+    width: 25%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1em;;
+}
+
+.input_text{
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.formato_textarea{
+    height: 90px;
+    border-radius: 5px;
+}
+
+.formatofecha {
+    height: 30px;
+    border-radius: 5px;
+    width: 238px;
+    margin-bottom: 10px;
+}
+    
+    
+}

@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Siempre Salud</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script type="text/javascript" src="js/funcion_reloj.js"></script>
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js">
+    </script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js">
+    </script>
+    <script type="text/javascript" src="css/helpers/jquery.fancybox-thumbs.js">
+    </script>
+    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="css/helpers/jquery.fancybox-thumbs.css">
+    <script type="text/javascript">
+        function alerta(){
+            alert ("Sección en construcción... Intente nuevamente más tarde!!!");
+        }
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+	$(".fancybox-thumb").fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 100,
+				height	: 100
+			}
+		}
+	});
+});
+    </script>
+    <script type="text/javascript">
+        function iniciar() {
+            var elem=document.getElementById("texto_pie");
+            var contenido=elem.innerHTML;
+            var ancho=screen.width;
+            var alto=screen.height;
+            elem.innerHTML=contenido + "<small>| La resolución de la palntalla es de " + ancho + " x " + alto + "</small>";
+        }
+            addEventListener('load', iniciar);
+        
+    </script>
+</head>
+<body onload="extract();">
+    <section id="contenedor">
+        <header id="cabecera_index">
+            <div id="logo" onclick="location.href = 'index.html'"></div>
+            <div id="marca">
+                <h1>Siempre Salud</h1>
+                <h4>Lic. Maria Florencia Cordero</h4>            
+            </div>
+             <div id="reloj">
+            <form name="form_reloj"> 
+                <input type="text" name="reloj" size="10" id="formato" onfocus="foco();"> 
+            </form>
+            </div>
+            <div id="redes">
+                <a href="http://www.facebook.com" target="new"><img src="imagenes/boton-facebook.png" alt="Logo Facebook" title="Facebook"/></a>
+                <a href="http://www.twitter.com" target="new"><img src="imagenes/boton_twitter.png" alt="Logo Twitter" title="Twiter"/></a>
+            </div>
+        </header>
+        <nav id="botonera_principal">
+            <ul>
+                <li><a class="boton_rojo" href="index.html">Inicio</a></li>
+                <li><a class="boton_naranja" href="nutricion.html">Nutrición</a></li>
+                <li><a class="boton_amarillo" href="planes.html">Tratamientos</a></li>
+                <li><a class="boton_verde" href="recetas.html">Recetas</a></li>
+                <li><a class="boton_violeta" href="fitness.html">Fitness</a></li>
+                <li><a class="boton_azul" href="tareas.html">Tareas</a></li>
+                <li><a class="boton_celeste" href="turnos.html">Turnos</a></li>
+            </ul>
+        </nav>
+        <section id="contenido_index">
+            <div id="contenido_nutricion">
+                <figure>
+                    <a href="imagenes/palta.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Palta: la estrella tropical"><img src="imagenes/palta.jpg" alt="imagen de palta"></a>
+                    <figcaption onclick="location.href = 'palta.html'"><span>Palta: </span>la estrella tropical</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/brocoli.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Brócoli: imagen de brocoli"><img src="imagenes/brocoli.jpg" alt="imagen de brocoli"></a>
+                    <figcaption onclick="alerta();"><span>Brócoli: </span>la crucífera anticáncer</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/aceitunas.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Aceitunas: guardianas anticolesterol"><img src="imagenes/aceitunas.jpg" alt="imagen de aceitunas"></a>
+                    <figcaption onclick="alerta();"><span>Aceitunas: </span>guardianas anticolesterol</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/soja.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Soja: la legumbre más potente"><img src="imagenes/soja.jpg" alt="imagen de soja"></a>
+                    <figcaption onclick="alerta();"><span>Soja: </span>la legumbre más potente</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/linoychia.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Lino y Chía: miniaturas saludables"><img src="imagenes/linoychia.jpg" alt="imagen de semillas de lino y chia"></a>
+                    <figcaption onclick="alerta();"><span>Lino y Chía: </span>miniaturas saludables</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/tomate.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Tomate: el rey del licopeno"><img src="imagenes/tomate.jpg" alt="imagen de tomate"></a>
+                    <figcaption onclick="alerta();"><span>Tomate: </span>el rey del licopeno</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/quinua.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Quinua: el poder del altiplano"><img src="imagenes/quinua.jpg" alt="imagen de quinua"></a>
+                    <figcaption onclick="alerta();"><span>Quinua: </span>el poder del altiplano</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/avena.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Avena: un cereal muy saludable"><img src="imagenes/avena.jpg" alt="imagen de avena"></a>
+                    <figcaption onclick="alerta();"><span>Avena: </span>un cereal muy saludable</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/palmitos.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Palmitos: un clásico festivo"><img src="imagenes/palmitos.jpg" alt="imagen de palmitos"></a>
+                    <figcaption onclick="alerta();"><span>Palmitos: </span>un clásico festivo</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/ajo.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Ajo: un escudo protector para su corazón"><img src="imagenes/ajo.jpg" alt="imagen de ajo"></a>
+                    <figcaption onclick="alerta();"><span>Ajo: </span>un escudo protector para su corazón</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/azafran.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Azafrán: el oro de los sabores"><img src="imagenes/azafran.jpg" alt="imagen de azafrán"></a>
+                    <figcaption onclick="alerta();"><span>Azafrán: </span>el oro de los sabores</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/pimienta.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Pimienta: la reina multicolor"><img src="imagenes/pimienta.jpg" alt="imagen de pimienta"></a>
+                    <figcaption onclick="alerta();"><span>Pimienta: </span>la reina multicolor</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/albahaca.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Albahaca: la hierba real"><img src="imagenes/albahaca.jpg" alt="imagen de albahaca"></a>
+                    <figcaption onclick="alerta();"><span>Albahaca: </span>la hierba real <br/> </figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/perejil.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Perejil: la hierba perenne"><img src="imagenes/perejil.jpg" alt="imagen de perejil"></a>
+                    <figcaption onclick="alerta();"><span>Perejil: </span><br/>la hierba perenne</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/romero.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Romero: la hierba de las coronas"><img src="imagenes/romero.jpg" alt="imagen de romero"></a>
+                    <figcaption onclick="alerta();"><span>Romero: </span>la hierba de las coronas</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/oregano.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Orégano: aromático y versátil"><img src="imagenes/oregano.jpg" alt="imagen de orégano"></a>
+                    <figcaption onclick="alerta();"><span>Orégano: </span>aromático y versátil</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/canela.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Canela: dulce y aromática"><img src="imagenes/canela.jpg" alt="imagen de canela"></a>
+                    <figcaption onclick="alerta();"><span>Canela: </span>dulce y aromática</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/frutasecas.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Frutas secas: energía concentrada"><img src="imagenes/frutasecas.jpg" alt="imagen de frutas secas"></a>
+                    <figcaption onclick="alerta();"><span>Frutas secas: </span>energía concentrada</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/chocolate.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Chocolate: delicia saludable"><img src="imagenes/chocolate.jpg" alt="imagen de chocolate"></a>
+                    <figcaption onclick="alerta();"><span>Chocolate: </span>delicia saludable</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/uva.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Uva: dulce y poderosa"><img src="imagenes/uva.jpg" alt="imagen de uva"></a>
+                    <figcaption onclick="alerta();"><span>Uva: </span>dulce y poderosa</figcaption>
+                </figure>
+                <figure>
+                    <a href="imagenes/arandano.jpg" class="fancybox-thumb" rel="fancybox-thumb" title="Arándano: la baya antioxidante"><img src="imagenes/arandano.jpg" alt="imagen de arándano"></a>
+                    <figcaption onclick="alerta();"><span>Arándano: </span>la baya antioxidante</figcaption>
+                </figure>
+            </div>    
+            <div id="contenido_abajo">
+                <div id="base1">
+                    <p>Viamonte xxxx - 3°Piso - Dpto. b</p>
+                    <p>Balvanera - C.A.B.A.</p>
+                    <p>Días y horarios de Atención:</p>
+                    <p>Lunes a Viernes de 14:00 a 20:00hs.</p>
+                </div>
+                <div id="base2">
+                    <p>Próximamente atención a las siguientes Empresas de Medicina Prepagas</p>
+                </div>
+                <div id="imagen_base"></div>
+            </div>        
+        </section>
+        <footer id="pie_index">
+                <small id="texto_pie">Copyright © 2016 | Todos los derechos reservados | <a class="subrayado_enlace" href="#">Términos y Condiciones</a> | Atención telefónica 0800-777-7823</small>
+        </footer>
+    </section>
+</body>
+</html>

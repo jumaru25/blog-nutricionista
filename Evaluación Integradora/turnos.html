@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Siempre Salud</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script type="text/javascript" src="js/funcion_reloj.js"></script>
+    <script type="text/javascript">
+        function alerta(){
+            alert ("Sección en construcción... Intente nuevamente más tarde!!!");
+        }
+    </script>
+    <script type="text/javascript">
+        function iniciar() {
+            var elem=document.getElementById("texto_pie");
+            var contenido=elem.innerHTML;
+            var ancho=screen.width;
+            var alto=screen.height;
+            elem.innerHTML=contenido + "<small>| La resolución de la palntalla es de " + ancho + " x " + alto + "</small>";
+        }
+            addEventListener('load', iniciar);
+    </script>
+    <script type="text/javascript">
+        function iniciar(){
+            var nombre=document.getElementById("nombre");
+            var apellido=document.getElementById("apellido");
+            var dni=document.getElementById("dni");
+            var telefono=document.getElementById("telefono");
+            
+            nombre.addEventListener("input",corroborar);
+            apellido.addEventListener("input",corroborar);
+            dni.addEventListener("input",corroborar);
+            telefono.addEventListener("input",corroborar);
+            
+            corroborar();
+            document.formulario_turnos.addEventListener("invalid",
+            validacion, true);
+            document.getElementById("enviar").addEventListener("click",
+            enviar, false);
+            document.formulario_turnos.addEventListener("input", controlar,
+            false);
+        }
+        function corroborar(){
+            if (nombre.value == '' || nombre.value == null || nombre.value.length == 0 || /^\s+$/.test(nombre.value)) {
+            nombre.setCustomValidity("ERROR en NOMBRE: Debe ingresar un nombre válido.");
+            }else{
+                nombre.setCustomValidity('');
+            }
+            if (apellido.value == '' || apellido.value == null || apellido.value.length == 0 || /^\s+$/.test(apellido)) {
+            apellido.setCustomValidity("ERROR en Apellido: Debe ingresar un apellido válido.");
+            }else{
+                apellido.setCustomValidity('');
+            }
+            if (dni.value == '') {
+            dni.setCustomValidity("ERROR en DNI: Debe ingresar un número de DNI válido.");
+            }else{
+                dni.setCustomValidity('');
+            }
+            if (telefono.value == '') {
+            telefono.setCustomValidity("ERROR en Telefono: Debe ingresar un número de teléfono válido.");
+            }else{
+                telefono.setCustomValidity('');
+            }
+        }
+        function validacion(e){
+        var elemento=e.target;
+        elemento.style.background='#FFDDDD';
+        }
+        function enviar(){
+        var valido=document.formulario_turnos.checkValidity();
+        if(valido){
+        document.formulario_turnos.submit();
+        }
+        }
+        function controlar(e){
+        var elemento=e.target;
+        if(elemento.validity.valid){
+        elemento.style.background='#FFFFFF';
+        }else{
+        elemento.style.background='#FFDDDD';
+        }
+        }
+        window.addEventListener("load", iniciar, false);
+        
+</script>
+</head>
+<body onload="extract();">
+    <section id="contenedor">
+        <header id="cabecera_index">
+            <div id="logo" onclick="location.href = 'index.html'"></div>
+            <div id="marca">
+                <h1>Siempre Salud</h1>
+                <h4>Lic. Maria Florencia Cordero</h4>            
+            </div>
+             <div id="reloj">
+            <form name="form_reloj"> 
+                <input type="text" name="reloj" size="10" id="formato" onfocus="foco();"> 
+            </form>
+            </div>
+            <div id="redes">
+                <a href="http://www.facebook.com" target="new"><img src="imagenes/boton-facebook.png" alt="Logo Facebook" title="Facebook"/></a>
+                <a href="http://www.twitter.com" target="new"><img src="imagenes/boton_twitter.png" alt="Logo Twitter" title="Twiter"/></a>
+            </div>
+        </header>
+        <nav id="botonera_principal">
+            <ul>
+                <li><a class="boton_rojo" href="index.html">Inicio</a></li>
+                <li><a class="boton_naranja" href="nutricion.html">Nutrición</a></li>
+                <li><a class="boton_amarillo" href="planes.html">Tratamientos</a></li>
+                <li><a class="boton_verde" href="recetas.html">Recetas</a></li>
+                <li><a class="boton_violeta" href="fitness.html">Fitness</a></li>
+                <li><a class="boton_azul" href="tareas.html">Tareas</a></li>
+                <li><a class="boton_celeste" href="turnos.html">Turnos</a></li>
+            </ul>
+             </nav>
+        <section id="contenido_index">
+            <div id="contenido_turnos">
+                <div id="formato_formularios">
+                    <h2>Turnos</h2>
+                    <h6>(Complete el siguiente formalario, nos comunicaremos a la brevedad)</h6><br/><br/>
+                    <form action="" method="" name="formulario_turnos" onsubmit="return validacion()">
+                        <input type="text" pattern="[A-Za-z]{2,}+[A-Za-z]{2,}" size="30" maxlength="30" name="nombre" class="input_text" placeholder="Nombre" id="nombre"><br/>
+                        <input type="text" pattern="[A-Za-z]{2,}+[A-Za-z]{2,}" size="30" maxlength="30" name="apellido" class="input_text" placeholder="Apellido" id="apellido"><br/>
+                        <input type="text" pattern="\d{8}" size="30" maxlength="30" name="dni" class="input_text" placeholder="DNI" id="dni"><br/>
+                        <input type="tel" pattern="\d{10}" size="30" maxlength="40" name="tel" class="input_text" placeholder="Teléfono (diez dígitos)" id="telefono"><br/>
+                        <input type="email" size="30" maxlength="40" name="email" class="input_text" placeholder="E-mail" id="email"><br/>
+                        <input name="birthday" type="date" min="2016-07-01" max="2016-07-31" class="formatofecha"><br/>
+                        <textarea rows="10" cols="33" name="consulta" class="formato_textarea">Observación...</textarea>
+                        <div>
+                            <input type="submit" value="Enviar" class="botones">
+                            <input type="reset" value="Borrar" class="botones">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="contenido_abajo">
+                <div id="base1">
+                    <p>Viamonte xxxx - 3°Piso - Dpto. b</p>
+                    <p>Balvanera - C.A.B.A.</p>
+                    <p>Días y horarios de Atención:</p>
+                    <p>Lunes a Viernes de 14:00 a 20:00hs.</p>
+                </div>
+                <div id="base2">
+                    <p>Próximamente atención a las siguientes Empresas de Medicina Prepagas</p>
+                </div>
+                <div id="imagen_base"></div>
+            </div>        
+        </section>
+        <footer id="pie_index">
+                <small id="texto_pie">Copyright © 2016 | Todos los derechos reservados | <a class="subrayado_enlace" href="#">Términos y Condiciones</a> | Atención telefónica 0800-777-7823</small>
+        </footer>
+    </section>
+</body>
+</html>

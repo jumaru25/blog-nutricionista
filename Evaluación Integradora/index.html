@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Siempre Salud</title>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="nutricion, dietas, delgazar, salud, florencia cordero"/>
+    <link rel="stylesheet" href="estilos.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/funcion.js"></script>
+    <script src="js/canvas_animacion.js"></script>
+    <script type="text/javascript">
+        function alerta(){
+            alert ("Sección en construcción... Intente nuevamente más tarde!!!");
+        }
+    </script>
+    <script type="text/javascript">
+    function popup() {
+        var nuevaVentana=window.open("","segundaPag","width=600,height=400");
+        nuevaVentana.document.write("<html><head><title>ATENCION!!!</title></head><body onClick='window.close();' style='background-image : url(imagenes/slider3.jpg); background-size: cover; color : White; font-family : Verdana, Arial, Helvetica; font-size : 8pt; text-align : center;'><h1 style='background-color: rgba(76, 175, 80, 0.3); color: #0000FF; text-shadow: rgb(150,150,150) 3px 3px 5px; box-shadow= rgb(150,150,150) 5px 5px 10px; border-radius: 15px; margin-top:100px;'>Próximo Sábado 10hs. inauguramos las charlas sobre Nutrición en el auditorium de la Clínica xxxx</h1></body></html>");
+    }
+    
+    function temporizador() {
+        setTimeout("popup()",3000);
+    }
+    </script>
+    <script type="text/javascript">
+        function iniciar() {
+            var elem=document.getElementById("texto_pie");
+            var contenido=elem.innerHTML;
+            var ancho=screen.width;
+            var alto=screen.height;
+            elem.innerHTML=contenido + "<small>| La resolución de la palntalla es de " + ancho + " x " + alto + "</small>";
+        }
+            addEventListener('load', iniciar);
+        
+    </script>
+</head>
+<body onload="temporizador();">
+    <section id="contenedor">
+        <header id="cabecera_index">
+            <div id="logo" onclick="location.href = 'index.html'"></div>
+            <div id="marca">
+                <h1>Siempre Salud</h1>
+                <h4>Lic. Maria Florencia Cordero</h4>            
+            </div>
+            <!--<div id="reloj">-->
+            <!--</div>-->
+            <div id="redes">
+                <a href="http://www.facebook.com" target="new"><img src="imagenes/boton-facebook.png" alt="Logo Facebook" title="Facebook"/></a>
+                <a href="http://www.twitter.com" target="new"><img src="imagenes/boton_twitter.png" alt="Logo Twitter" title="Twiter"/></a>
+            </div>
+            <div id="canvas">
+            <canvas id="lienzo" width="960" height="25">
+                Su navegador no soporta el elemento canvas
+            </canvas>                
+            </div>
+        </header>
+        <nav id="botonera_principal">
+            <ul>
+                <li><a class="boton_rojo" href="index.html">Inicio</a></li>
+                <li><a class="boton_naranja" href="nutricion.html">Nutrición</a></li>
+                <li><a class="boton_amarillo" href="planes.html">Tratamientos</a></li>
+                <li><a class="boton_verde" href="recetas.html">Recetas</a></li>
+                <li><a class="boton_violeta" href="fitness.html">Fitness</a></li>
+                <li><a class="boton_azul" href="tareas.html">Tareas</a></li>
+                <li><a class="boton_celeste" href="turnos.html">Turnos</a></li>
+            </ul>
+        </nav>
+        <section id="contenido_index">
+            <div id="contenido_arriba">
+                <div class="slide">
+	               <figure>
+	                   <img class="img1" alt="alt img1" src="imagenes/slider1.jpg" />
+	                   <img class="img2" alt="alt img 2" src="imagenes/slider2.jpg" />
+	                   <img class="img3" alt="alt img3" src="imagenes/slider3.jpg" />
+	               </figure>
+	           </div>
+            </div>
+            <div id="contenido_abajo">
+                <div id="base1">
+                    <p>Viamonte xxxx - 3°Piso - Dpto. b</p>
+                    <p>Balvanera - C.A.B.A.</p>
+                    <p>Días y horarios de Atención:</p>
+                    <p>Lunes a Viernes de 14:00 a 20:00hs.</p>
+                </div>
+                <div id="base2">
+                    <p>Próximamente atención a las siguientes Empresas de Medicina Prepagas</p>
+                </div>
+                <div id="imagen_base">
+                </div>
+            </div>        
+        </section>
+        <footer id="pie_index">
+                <small id="texto_pie">Copyright © 2016 | Todos los derechos reservados | <a class="subrayado_enlace" href="#">Términos y Condiciones</a> | Atención telefónica 0800-777-7823</small>
+        </footer>
+    </section>
+</body>
+</html>

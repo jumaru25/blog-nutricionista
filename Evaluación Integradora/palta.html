@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Siempre Salud</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script type="text/javascript" src="js/funcion_reloj.js"></script>
+    <script type="text/javascript">
+        function alerta(){
+            alert ("Sección en construcción... Intente nuevamente más tarde!!!");
+        }
+    </script>
+    <script type="text/javascript">
+        function iniciar() {
+            var elem=document.getElementById("texto_pie");
+            var contenido=elem.innerHTML;
+            var ancho=screen.width;
+            var alto=screen.height;
+            elem.innerHTML=contenido + "<small>| La resolución de la palntalla es de " + ancho + " x " + alto + "</small>";
+        }
+            addEventListener('load', iniciar);
+        
+    </script>
+</head>
+<body onload="extract();">
+    <section id="contenedor">
+        <header id="cabecera_index">
+            <div id="logo" onclick="location.href = 'index.html'"></div>
+            <div id="marca">
+                <h1>Siempre Salud</h1>
+                <h4>Lic. Maria Florencia Cordero</h4>            
+            </div>
+             <div id="reloj">
+            <form name="form_reloj"> 
+                <input type="text" name="reloj" size="10" id="formato" onfocus="foco();"> 
+            </form>
+            </div>
+            <div id="redes">
+                <a href="http://www.facebook.com" target="new"><img src="imagenes/boton-facebook.png" alt="Logo Facebook" title="Facebook"/></a>
+                <a href="http://www.twitter.com" target="new"><img src="imagenes/boton_twitter.png" alt="Logo Twitter" title="Twiter"/></a>
+            </div>
+        </header>
+        <nav id="botonera_principal">
+            <ul>
+                <li><a class="boton_rojo" href="index.html">Inicio</a></li>
+                <li><a class="boton_naranja" href="nutricion.html">Nutrición</a></li>
+                <li><a class="boton_amarillo" href="planes.html">Tratamientos</a></li>
+                <li><a class="boton_verde" href="recetas.html">Recetas</a></li>
+                <li><a class="boton_violeta" href="fitness.html">Fitness</a></li>
+                <li><a class="boton_azul" href="tareas.html">Tareas</a></li>
+                <li><a class="boton_celeste" href="turnos.html">Turnos</a></li>
+            </ul>
+             </nav>
+        <section id="contenido_index">
+            <!--<div id="contenido_nutricion">  
+            </div> -->
+            <div id="palta">
+            <article id="articulo">
+                <header>
+                    <hgroup>
+                        <h1 class="textoblanco"><span>PALTA:</span> LA ESTRELLA TROPICAL</h1>
+                        <h4 class="textoblanco">Beneficios y estrategias para aprovechar al máximo su riqueza nutritiva</h4>
+                    </hgroup>
+                </header>
+                <p>Lejos de ser un alimento exótico, la palta aporta notables beneficios para la salud si se la incluye en una alimentación equilibrada. Descubra las propiedades de este <strong>Súper Alimento</strong> a continuación.</p>
+                <h5 class="textoblanco">DESCRIPCION</h5>
+                <p>Esta fruta tropical pertenece a la familia de las <em>Lauráceas</em> y nace de un árbol que, en estado silvestre, puede medir más de 20 metros de alto. Su forma de pera contiene, en su interior, una única semilla redondeada de color claro recubierta de una delgada capa leñosa amarronada. Como es un fruto muy delicado, su recolección se hace a mano cuando aún no está madura.</p>
+                <h5 class="textoblanco">BENEFICIOS</h5>
+                <p>Debido a su composición nutricional <strong>-ver tabla-</strong> se la considera un <strong>súper alimento</strong> que protege la salud del corazón y aumenta las defensas. Además, la palta ayuda...</p>
+                <ul>
+                    <li>Controlar los niveles de colesterol en sangre: Gracias a su riqueza en ácidos grasos omega 9, reduce el colesterol LDL (malo) y aumenta el colesterol HDL (bueno)</li>
+                    <li>Nivelar la presión arterial</li>
+                    <li>Regular el tránsito intestinal</li>
+                    <li>Prevenir la degeneración macular</li>
+                </ul>
+                <h5 class="textoblanco">COMO ELEGIRLA Y CONSERVARLA</h5>
+                <ul>
+                    <li>Compruebe que la piel no presente ningún defecto -manchas, puntos negros o señal de excesiva maduración-.</li>
+                    <li>Está madura cuando cede a la leve presión con un dedo</li>
+                    <li>Si la compró antes de madurar, déjela a temperatura ambiente entre 1 y 3 días.</li>
+                    <li>Para que madure rápido envuélvala en papel de diario junto con una manzana o una banana. Para detener su maduración, guárdela en la parte menos fría de la heladera.</li>
+                    <li>Para congelarla quítele la pulpa, aplástela bien y mézclela con jugo de limón.</li>
+                </ul>
+            </article>
+            <article id="tabla">
+                <table>
+                    <tr>
+                        <th colspan="2" class="textocentrado">PALTA c/100g</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="textocentrado">160 cal.</td>
+                    </tr>
+                    <tr>
+                        <td>H. de carbono</td>
+                        <td>8,5g</td>
+                    </tr>
+                    <tr>
+                        <td>Proteínas</td>
+                        <td>2g</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas totales</td>
+                        <td>14,5g</td>
+                    </tr>
+                    <tr>
+                        <td>Omega 9</td>
+                        <td>8,6g</td>
+                    </tr>
+                    <tr>
+                        <td>Fibra</td>
+                        <td>7g</td>
+                    </tr>
+                    <tr>
+                        <td>Vitamina A</td>
+                        <td>44mcg</td>
+                    </tr>
+                    <tr>
+                        <td>Vitamina B3</td>
+                        <td>1,7mg</td>
+                    </tr>
+                    <tr>
+                        <td>Vitamina B6</td>
+                        <td>0,2mg</td>
+                    </tr>
+                    <tr>
+                        <td>Vitamina B9</td>
+                        <td>81mcg</td>
+                    </tr>
+                    <tr>
+                        <td>Vitamina C</td>
+                        <td>10mg</td>
+                    </tr>
+                    <tr>
+                        <td>Vitamina E</td>
+                        <td>21mcg</td>
+                    </tr>
+                    <tr>
+                        <td>Vitamina K</td>
+                        <td>2mg</td>
+                    </tr>
+                    <tr>
+                        <td>Calcio</td>
+                        <td>12mg</td>
+                    </tr>
+                    <tr>
+                        <td>Hierro</td>
+                        <td>0,5mg</td>
+                    </tr>
+                    <tr>
+                        <td>Potasio</td>
+                        <td>485mg</td>
+                    </tr>
+                    <tr>
+                        <td>Fósforo</td>
+                        <td>52mg</td>
+                    </tr>
+                    <tr>
+                        <td>Sodio</td>
+                        <td>7mg</td>
+                    </tr>    
+                </table>
+            </article>
+            <div id="volver">
+                <a href="nutricion.html">Volver</a>
+            </div>
+            </div>
+            <div id="contenido_abajo">
+                <div id="base1">
+                    <p>Viamonte xxxx - 3°Piso - Dpto. b</p>
+                    <p>Balvanera - C.A.B.A.</p>
+                    <p>Días y horarios de Atención:</p>
+                    <p>Lunes a Viernes de 14:00 a 20:00hs.</p>
+                </div>
+                <div id="base2">
+                    <p>Próximamente atención a las siguientes Empresas de Medicina Prepagas</p>
+                </div>
+                <div id="imagen_base"></div>
+            </div>        
+        </section>
+        <footer id="pie_index">
+                <small id="texto_pie">Copyright © 2016 | Todos los derechos reservados | <a class="subrayado_enlace" href="#">Términos y Condiciones</a> | Atención telefónica 0800-777-7823</small>
+        </footer>
+    </section>
+</body>
+</html>

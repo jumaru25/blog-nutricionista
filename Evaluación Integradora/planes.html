@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Siempre Salud</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script type="text/javascript" src="js/funcion_reloj.js"></script>
+    <script type="text/javascript">
+        function alerta(){
+            alert ("Sección en construcción... Intente nuevamente más tarde!!!");
+        }
+    </script>
+    <script type="text/javascript">
+        function iniciar() {
+            var elem=document.getElementById("texto_pie");
+            var contenido=elem.innerHTML;
+            var ancho=screen.width;
+            var alto=screen.height;
+            elem.innerHTML=contenido + "<small>| La resolución de la palntalla es de " + ancho + " x " + alto + "</small>";
+        }
+            addEventListener('load', iniciar);
+        
+    </script>
+</head>
+<body onload="extract();">
+    <section id="contenedor">
+        <header id="cabecera_index">
+            <div id="logo" onclick="location.href = 'index.html'"></div>
+            <div id="marca">
+                <h1>Siempre Salud</h1>
+                <h4>Lic. Maria Florencia Cordero</h4>            
+            </div>
+             <div id="reloj">
+            <form name="form_reloj"> 
+                <input type="text" name="reloj" size="10" id="formato" onfocus="foco();"> 
+            </form>
+            </div>
+            <div id="redes">
+                <a href="http://www.facebook.com" target="new"><img src="imagenes/boton-facebook.png" alt="Logo Facebook" title="Facebook"/></a>
+                <a href="http://www.twitter.com" target="new"><img src="imagenes/boton_twitter.png" alt="Logo Twitter" title="Twiter"/></a>
+            </div>
+        </header>
+        <nav id="botonera_principal">
+            <ul>
+                <li><a class="boton_rojo" href="index.html">Inicio</a></li>
+                <li><a class="boton_naranja" href="nutricion.html">Nutrición</a></li>
+                <li><a class="boton_amarillo" href="planes.html">Tratamientos</a></li>
+                <li><a class="boton_verde" href="recetas.html">Recetas</a></li>
+                <li><a class="boton_violeta" href="fitness.html">Fitness</a></li>
+                <li><a class="boton_azul" href="tareas.html">Tareas</a></li>
+                <li><a class="boton_celeste" href="turnos.html">Turnos</a></li>
+            </ul>
+             </nav>
+        <section id="contenido_index">
+            <div id="contenido_tratamientos">
+                <div id="tratamientos_izq">
+                    <ul id="tratamientos">
+                        <li>
+                            <details>
+                                <summary>Obesidad</summary>
+                                <p class="textotratamiento">Estado patológico que se caracteriza por un exceso o una acumulación excesiva y general de grasa en el cuerpo.<em>"Un exceso de alimentos puede producir obesidad, con el consiguiente aumento del riesgo de infarto cardíaco, arteriosclerosis, hipertensión y otras enfermedades".</em></p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Diabetes tipo I</summary>
+                                <p class="textotratamiento">La diabetes es un grupo de enfermedades caracterizadas por un alto nivel de glucosa resultado de defectos en la capacidad del cuerpo para producir o usar insulina.</p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Diabetes tipo II</summary>
+                                <p class="textotratamiento">La diabetes es un grupo de enfermedades caracterizadas por un alto nivel de glucosa resultado de defectos en la capacidad del cuerpo para producir o usar insulina.</p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Hipertensión</summary>
+                                <p class="textotratamiento">Presión excesivamente alta de la sangre sobre la pared de las arterias.<em>"La hipertensión arterial puede provocar infartos y hemorragias cerebrales".</em></p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Síndrome Metabólico</summary>
+                                <p class="textotratamiento">Se denomina síndrome metabólico a la conjunción de varias enfermedades o factores de riesgo en un mismo individuo que aumentan su probabilidad de padecer una enfermedad cardiovascular o diabetes mellitus...</p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Síndrome de Intestino Irritable</summary>
+                                <p class="textotratamiento">Es un cuadro crónico y recidivante caracterizado por la existencia de dolor abdominal y/o cambios en el ritmo intestinal, acompañados o no de una sensación de distensión abdominal, sin que se demuestre una alteración en la morfología o en el metabolismo intestinales, ni causas infecciosas que lo justifiquen. <em>"Los cambios en su alimentación y estilo de vida pueden ayudarle".</em></p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Constipación</summary>
+                                <p class="textotratamiento">La constipación consiste en la dificultad para eliminar las heces. Este impedimento se puede manifestar a través de deposiciones escasas, difíciles de expulsar  o demasiado infrecuentes. <em>"Es un estado realmente incómodo, que puede interferir con la vida diaria, afectando la calidad de vida de quien la padece".</em></p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Celiaquía</summary>
+                                <p class="textotratamiento">La enfermedad celíaca es una enfermedad autoinmune que se caracteriza por una inflamación crónica de la parte próxima del intestino delgado o yeyuno, causada por la exposición a la gliadina, una proteína vegetal de algunos cereales en la dieta. La gliadina es uno de los componentes del gluten...</p>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tratamientos_der">
+                    <ul id="tratamientos">
+                        <li>
+                            <details>
+                                <summary>Gastritis/ Ulcera</summary>
+                                <p class="textotratamiento">Inflamación de la mucosa del estómago. <em>"Las molestias de la gastritis se alivian con una dieta adecuada"</em></p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Colecistitis</summary>
+                                <p class="textotratamiento">Inflamación aguda o crónica de la vesícula biliar, que generalmente se produce por la presencia de cálculos. <em>"Los tratamientos no quirúrgicos incluyen: antibióticos que debe tomar en casa para combatir la infección, dieta baja en grasa (si puede comer), analgésicos"</em></p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Higado Graso</summary>
+                                <p class="textotratamiento">El hígado graso es una enfermedad generalmente benigna del hígado que se caracteriza por la acumulación de ácidos grasos y de triglicéridos en las células hepáticas. <em>"Si bien no existe un tratamiento definitivo para el hígado graso, las recomendaciones básicas que se dan al respecto pasan por una reducción de peso corporal y seguir una alimentación sana y saludable, rica en frutas y verduras".</em></p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Pancreatitis</summary>
+                                <p class="textotratamiento">La pancreatitis es una inflamación del páncreas. Esto ocurre cuando las enzimas digestivas comienzan a digerir el páncreas. La pancreatitis puede ser aguda o crónica. De cualquier forma es grave y puede traer complicaciones.</p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Hemorroides</summary>
+                                <p class="textotratamiento">Las hemorroides son varices o inflamaciones de las venas en el recto y el ano. <em>"Para prevenir el estreñimiento y las hemorroides, usted debe: tomar muchos líquidos, consumir una dieta rica en fibra de frutas, verduras y granos integrales, pensar en tomar suplementos de fibra, usar ablandadores de heces para prevenir el esfuerzo"</em></p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Diarreas</summary>
+                                <p class="textotratamiento">Alteración intestinal que se caracteriza por la mayor frecuencia, fluidez y, a menudo, volumen de las deposiciones.<em>"En la mayoría de los casos usted puede tratar la diarrea en casa. Deberá aprender: a beber mucho líquido para prevenir la deshidratación, qué alimentos debe o no debe comer, qué hacer si está amamantando y a qué signos de peligro debe estar atento".</em></p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Planes de alimentación para niños y adultos</summary>
+                                <p class="textotratamiento">Un estilo de vida saludable conlleva muchas decisiones. Entre ellas, la elección de una dieta o un plan de alimentación equilibrado. </p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Disfagia</summary>
+                                <p class="textotratamiento">Dificultad o imposibilidad de tragar. La disfagia puede presentarse a cualquier edad, pero es más común en personas mayores. Muchas cosas diferentes pueden provocar disfagia: hábitos de alimentación deficiente, trastornos nerviosos y musculares, problemas en el esófago... </p>
+                            </details>
+                        </li>
+                        
+                        <!--<li>Gastritis/ Ulcera<a href="#"><img src="imagenes/btn_mas.jpg" alt="boton info" title="Info"/></a></li>
+                        <li>Colecistitis<a href="#"><img src="imagenes/btn_mas.jpg" alt="boton info" title="Info"/></a></li>
+                        <li>Higado Graso<a href="#"><img src="imagenes/btn_mas.jpg" alt="boton info" title="Info"/></a></li>
+                        <li>Pancriatitis<a href="#"><img src="imagenes/btn_mas.jpg" alt="boton info" title="Info"/></a></li>
+                        <li>Hemorroides<a href="#"><img src="imagenes/btn_mas.jpg" alt="boton info" title="Info"/></a></li>
+                        <li>Diarreas<a href="#"><img src="imagenes/btn_mas.jpg" alt="boton info" title="Info"/></a></li>
+                        <li>Planes de alimentación para ninños y adultos<a href="#"><img src="imagenes/btn_mas.jpg" alt="boton info" title="Info"/></a></li>
+                        <li><a href="#"></li>-->
+                    </ul>
+                </div>
+                
+            </div>
+            <div id="contenido_abajo">
+                <div id="base1">
+                    <p>Viamonte xxxx - 3°Piso - Dpto. b</p>
+                    <p>Balvanera - C.A.B.A.</p>
+                    <p>Días y horarios de Atención:</p>
+                    <p>Lunes a Viernes de 14:00 a 20:00hs.</p>
+                </div>
+                <div id="base2">
+                    <p>Próximamente atención a las siguientes Empresas de Medicina Prepagas</p>
+                </div>
+                <div id="imagen_base"></div>
+            </div>        
+        </section>
+        <footer id="pie_index">
+                <small id="texto_pie">Copyright © 2016 | Todos los derechos reservados | <a class="subrayado_enlace" href="#">Términos y Condiciones</a> | Atención telefónica 0800-777-7823</small>
+        </footer>
+    </section>
+</body>
+</html>

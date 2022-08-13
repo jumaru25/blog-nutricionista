@@ -1,0 +1,22 @@
+#formbox{
+  float: left;
+  padding: 20px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px 10px 10px 10px;
+    margin-right: 40px;
+}
+#databox{
+  float: left;
+  width: 400px;
+  margin-left: 20px;
+  padding: 20px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px 10px 10px 10px;
+}
+#keyword, #text, #nivel, #year{
+  width: 200px;
+}
+#databox div{
+  padding: 5px;
+  border-bottom: 1px solid #999999;
+}
